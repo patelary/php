@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<!--
+Aryan Patel
+Student Id: 991511203
+SYST10199 - Web Programming
+-->
+<html>
+    <head>
+        <title>Game</title>
+		<style>
+		 h1
+		 {
+		 color:#ff1a66;
+		 }
+		</style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#666666">
+        <script>
+		var count1=0; 
+		var count2=0; 
+		var userInput;
+		
+		do{
+		    userInput = parseInt(prompt("Enter the integer from 1 to 3 \n Enter 1 for rock \n Enter 2 for paper \n Enter 3 for scissor"));
+		  	while(userInput!=1 && userInput!=2 && userInput!=3)
+			{
+			userInput = parseInt(prompt("Enter the integer from 1 to 3 \n Enter 1 for rock \n Enter 2 for paper \n Enter 3 for scissor"));
+			}
+			if(userInput == 1){
+			alert("You have entered rock");
+			}
+			if(userInput == 2){
+			alert("You have entered paper");
+			}
+			if(userInput == 3){
+			alert("You have entered scissor");
+			}
+			
+        var a = parseInt((Math.random()*3)+1);
+			if(a == 1){
+			alert("Computer enters rock");
+			}
+                          if(a == 2){
+			alert("Computer enters paper");
+			}
+			if(a == 3){
+			alert("Computer enters scissor");
+			}
+		if (userInput== 1)
+	 {
+	   if (a == 1)
+	   {
+	     alert ("Game Draw.. \n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 2)
+	   {
+	     count1++;
+	     alert ("Computer Wins..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 3)
+	   {
+	     count2++;
+	     alert ("You Win..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	 }
+	 
+	 if (userInput== 2)
+	 {
+	   if (a == 2)
+	   {
+	     alert ("Game Draw..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 3)
+	   {
+	     count1++;
+	     alert ("Computer Wins..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 1)
+	   {
+	     count2++;
+	     alert ("You Win..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	 }
+	 
+	 if (userInput == 3)
+	 {
+	   if (a == 3)
+	   {
+	     alert ("Game Draw..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 1)
+	   {
+	     count1++;
+	     alert ("Computer Wins..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	   if (a == 2)
+	   {
+	     count2++;
+	     alert ("You Win..\n Your Score: " + count2 + "\n Computer's Score: " + count1);
+	   }
+	 }
+		var b=confirm("would you like to play it agian");
+	     }while(b == true);
+		 
+		 alert("Final Score: \n Your score " + count2 + " \n Computer Score " + count1);
+		 if(count1 == count2)
+		 {
+		 alert("game draw");
+		 }
+		 else if(count1 > count2){
+		 alert("Winner is Computer");
+		 }
+		 else{
+		 alert("Congratulation you won");
+		 }
+        </script>
+		<h2 style="color:white"> THANK YOU </h2>
+		Click to go to main page <input type="button" value="exit" onclick="document.location='index.html'">
+    </body>
+</html>

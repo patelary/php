@@ -1,0 +1,23 @@
+/*
+Aryan Patel
+ Student Id:- 991511203
+SYS10199 - WEB PROGRAMMING 
+*/
+a{
+    text-decoration: none;
+}
+a:hover{
+     text-decoration: none;
+}
+#j{
+    text-shadow: 12px 12px 19px red;
+}
+#b{
+    display: inline-block;
+    background-color: green;
+    font-size: 20px;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:7px;
+}
